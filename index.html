@@ -1,0 +1,78 @@
+
+
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+
+        <link rel="stylesheet" href="css/index_css.css">
+    </head>
+
+    <body>
+      
+   <div class="container">
+     <h1 class="p-5 text-muted mb-5 ">Bookmarker</h1>
+
+   </div>
+
+
+     <!-- border border-bottom-1 -->
+
+    
+
+     <div class="bookmarkInput text-center" >
+        <div class="container container1  py-5 px-3  position-relative mb-5">
+            <h3 class=" pb-4" >Bookmark your favorite sites</h3>
+
+            <h5 class=" mb-2">Site Name</h5>        
+            <input id="name" type="text" class="form-control mb-1" placeholder="Enter Website Name">
+            <div class="alert alert-danger text-start d-none">must start with capital letter and contains no numbers</div>
+    
+            <h5 class=" mb-4 mt-4 " id="urlTitle">Site URL</h5>        
+            <input id="url" type="text" class="form-control mb-4" placeholder="Enter Website Link">
+            <div class="alert alert-danger text-start d-none">must be url format https://www,url.com</div>
+
+            <button id="mainBtn" class="btn btn-primary disabled">Submit</button>
+            
+        </div>
+
+        <input id="searchBox" onkeyup="onSearch(this.value)" type="text" class="form-control my-4 w-50 m-auto " placeholder="Enter search keyword">
+
+        <div class="saved mt-5">
+            <div class="container container2 py-5 px-3 position-relative mb-4">
+                
+                <table class="table">
+                    <tbody id="record">
+                        <!-- filled by js -->
+
+                    </tbody>
+                </table>
+                
+            </div>
+            
+        </div>
+
+
+       
+
+     </div>
+
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+
+
+
+
+      <script src="javascript/main.js"></script>
+      <script src="javascript/bootstrap.bundle.min.js"></script>
+      
+
+
+
+    </body>
+</html>

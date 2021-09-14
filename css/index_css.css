@@ -1,0 +1,37 @@
+
+
+.bookmarkInput .container{
+    background-color: #f1f1f1;
+}
+
+.bookmarkInput .container1::after,
+.saved .container2::before{
+    content: "";
+    width: 104%;
+    height: 1px;
+    background-color: gray;
+    position: absolute;
+    left: -2%;
+}
+
+.bookmarkInput .container1::after{
+    top: -10%;
+   
+}
+
+.saved .container2::before{
+    bottom: -10%;
+}
+
+
+.saved .container{
+    background: linear-gradient( #f1f1f1 80%,white );
+   
+}
+
+
+.arrow{
+    width: fit-content!important;
+    padding-top: 8px!important;
+    display: inline-block!important;
+}
